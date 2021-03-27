@@ -10,9 +10,19 @@
   margin-bottom: 4rem;
 }
 
+.page-header.inner.footer {
+  margin-bottom: 0;
+}
+
 .page-header.inner .container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.page-header.inner.footer .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-header.inner h1 {
