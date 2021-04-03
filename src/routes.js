@@ -18,6 +18,7 @@ const Profile = {
             return res.render(views + "profile", {profile: Profile.data})
         },
         update: (req, res) => {
+            const data = req.body
             
         }
     }
