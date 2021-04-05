@@ -35,10 +35,8 @@
             Você tem 2 horas livres no seu dia
           </span>
           <a href="/profile" id="avatar-profile">
-            <p>Jakeliny <span>Ver perfil</span></p>
-            <img
-              src="https://avatars.githubusercontent.com/u/17316392?s=460&u=6912a91a70bc89745a2079fdcdad3bc3ce370f13&v=4"
-            />
+            <p><%= profile.name %>  <span>Ver perfil</span></p>
+            <img src="<%= profile.avatar %>"/>
           </a>
         </section>
 
@@ -49,15 +47,15 @@
 
           <div class="info">
             <div class="total">
-              <strong>12</strong>
+              <strong><%= statusCount.total %> </strong>
               Projetos ao total
             </div>
             <div class="in-progress">
-              <strong>7</strong>
+              <strong><%= statusCount.progress %> </strong>
               Em andamento
             </div>
             <div class="finished">
-              <strong>4</strong>
+              <strong><%= statusCount.done %> </strong>
               Encerrados
             </div>
           </div>
@@ -108,7 +106,7 @@
                 <img src="/images/edit-24.svg" alt="Editar Job" />
               </a>
               <button class="delete button white" title="Excluir Job">
-                <img src="/images/trash-24.svg" alt="Excluir Job" />
+                <img src="./images/trash-24.svg" alt="Excluir Job" />
               </button>
             </div>
           </div>
@@ -125,7 +123,7 @@
         <h3>Excluir Job</h3>
         <p>Quer mesmo excluir esse job? <br/>
         Ele será apagado para sempre.  
-        </div>p>
+        </p>
         <footer>
           <a 
             class="button gray" 
